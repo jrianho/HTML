@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y estilo Css</title>
+    <link rel="stylesheet" href="../css/CONTACTO.css">
+</head>
+<body>
+    <header>
+        <img src="../img/incap.png" alt="" width="100" height="100">
+        <h1>FORMULARIO Y LISTAS HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+        <!-- seccion de fieldset -->
+        <fieldset>
+            <!-- seccion ingreso de nombre --> <hr>
+            <label for="">NOMBRE COMPLETO</label>
+            <input type="text" name="nombre" placeholder="&#9756; ingrese su nombre completo" required>
+            <br><br>
+            <!-- seccion ingreso email --> <hr>
+            <label>E-mail</label>
+            <input type="email" name="E-mail" placeholder="&#9874; ingrese su E-mail"required>
+            <br><br>
+            <!-- contraseña --> 
+            <label>contraseña</label>
+            <input type="password" name="contraseña" placeholder="&#9745; ingrese su contraseña" required><br><br>
+            <!-- seccion de hobbies --> <hr>
+            <label for="">selecciona tu Hobbies</label>
+            <br>
+            <input type="checkbox" name="cine">Cine <br>
+            <input type="checkbox" name="lectura">Lectura <br>
+            <input type="checkbox" name="deporte">Deporte <br>
+            <br>
+            <!-- seccion de estado civil --> <hr>
+            <label for="">Estado civil:</label><br>
+            <input type="radio" value="Casado" name="estcivil">Casado(a) <br>
+            <input type="radio" value="Soltero" name="estcivil">Soltero(a) <br>
+            <input type="radio" value="Viudo" name="estcivil">Viudo(a) <br>
+            <br><br>
+            <!-- seccionde opciones de lista -->
+            <label for="">PROGRAMAS TECNICOS</label>
+            <select name="select" id="">
+                <option value="">seleccione el programa</option>
+                <option value="">SISTEMAS</option>
+                <option value="">DISEÑO GRAFICO</option>
+                <option value="">CONTABILIDAD</option>
+            </select>
+            <br><br>
+            <!-- seccion de comentarios -->
+            <label for="">Tu comentario</label>
+            <br>
+            <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+        </fieldset>
+        <br><br><hr>
+        <!-- seccion de botones formularios  -->
+        <button type="submit"> ENVIAR </button>
+        <button type="reset"> CANCELAR </button>
+        <br><br>
+    </form>
+    </section>
+    <!-- seccion de pie de pagina -->
+    <footer>
+       <p> derechos reservados &copy; 2023 &#64; JHONNATAN RIAÑO</p>
+    </footer>
+</body>
+</html>

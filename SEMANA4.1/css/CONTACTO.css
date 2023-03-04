@@ -1,0 +1,120 @@
+/* SECCION DE ESTILOS PARA FONDO PAGINA WEB */
+body{
+    background-color: rgba(255,255,255,0.6);
+    background-image: url(../img/dinusaurio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode:lighten ;
+}
+/* seccion de estillo css3 para la cabecera pagina web */
+header{
+    background: rgba(255,255,255,0.6);
+    border: 2px solid blue;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    padding: 30px;
+}
+/* seccione estilo barra de navegacion */
+nav{
+    background-color: blue;
+    border: 2px solid green;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+nav ul{
+    display: inline;
+    list-style: none;
+    margin: 5px;
+    font: bold 12px verdana;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 5px;
+    font: bold 12px verdana;
+}
+/* seccion estilo principal */
+section{
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 10px auto;
+    background: rgba(255, 255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+form{
+    background: silver;
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 10px purple;
+}
+fieldset{
+    border-style: none;
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    resize: both;
+    max-height: 100px;
+}
+input:focus , textarea:focus{
+    border-color: rgb(20,0,255);
+    cursor: pointer;
+    box-shadow: inset 0 0 8px rgba(0,29,255,0.6);
+    outline: 0 none;
+}
+form button{
+    width: 40%;
+    margin: 15px 0px 20px 25px;
+    height: 40px;
+    background: radial-gradient(teal,black);
+    border: 2px solid black;
+    color: white;
+    border-radius: 15px 15px;
+}
+form button:hover{
+    background: lightblue;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+form input{
+    height: 20px;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+}
+/* seccion  pie de pagina */
+footer{
+    font-size: 16px;
+    text-align: center;
+    color: darkblue;
+}
+/* vista para celulres */
+@media (min-width:350px) and (max-width:850px){
+    section form label{
+        max-width: 100%;
+        height: auto;
+        font-size: 85%;
+    }
+    form fieldset > * {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
